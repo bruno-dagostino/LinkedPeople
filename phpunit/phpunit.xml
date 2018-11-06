@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php"
+		colors="true"
+		verbose="true"
+		stopOnFailure="false">
+	<testsuites>
+		<testsuite name="Test suite">
+			<directory>tests</directory>
+		</testsuite>
+	</testsuites>
+	<php>
+		<var name="DB_DSN" value="mysql:dbname=social;host=127.0.0.1" />
+		<var name="DB_USER" value="root" />
+		<var name="DB_PASSWD" value="" />
+		<var name="DB_DBNAME" value="social" />
+	</php>
+</phpunit>
